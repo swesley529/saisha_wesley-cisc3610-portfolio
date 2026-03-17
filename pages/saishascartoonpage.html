@@ -61,12 +61,17 @@
             margin-left: auto; 
             margin-right: auto;
         }
+        
+        #forgrass {
+            display: flex;
+            justify-content: space-around;
+        }
         .grass {
             width: 0px;
             height: 0px; 
             border-left: 70px solid transparent;
             border-right: 70px solid transparent;
-            border-bottom: 60px solid rgb(0, 200, 200);
+            border-bottom: 60px solid rgb(0, 200, 0);
         }
         .ground {
             background-color: rgb(101, 67, 33);
@@ -98,14 +103,20 @@
             </div>
         <div class="door"></div>
     </div>
-    
-    <div class ="grass">
+
+<div class ="forgrass">
     </div>
     
     <div class ="ground">
     </div>
      
-    
+    <script>
+      for (let i = 0; i < 20; i++) {
+         let grass = document.createElement("div");
+         grass.className = "grass";
+         document.getElementById("grass-container").appendChild(grass);
+}
+</script>
    
 </body>
 </html>

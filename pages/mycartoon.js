@@ -20,6 +20,9 @@ window.onload = function () {
 //ground
   ctx.fillStyle = "rgb(101, 67, 33)";
   ctx.fillRect(0, canvas.height - 200, canvas.width, 200);
-  ctx.stroke();
+
+  //house
+  ctx.fillStyle = "rbg(255, 0, 0)";
+  ctx.fillRect(150, 300, 200, 200);
 
 };

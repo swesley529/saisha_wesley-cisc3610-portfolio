@@ -3,121 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Saisha Wesley's Cartoon Page</title>
-    <style>
-        body {
-            margin: 10px;
-            background-color: rgb(150, 188, 200);
-        }
-        .text {
-            color: rgb(100,70,200);
-        }
-        .sun {
-            width: 200px;
-            height: 200px; 
-            background-color: rgb(255, 255, 0);
-            border-radius: 50%;
-        }
-        .roof {
-            width: 0px;
-            height: 0px; 
-            border-left: 300px solid transparent;
-            border-right: 300px solid transparent;
-            border-bottom: 200px solid rgb(0, 0, 0);
-            margin-left: auto; 
-            margin-right: auto;
-        }
-         .housebase {
-            background-color: rgb(200, 20, 33);
-            max-width: 600px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            margin-left: auto; 
-            margin-right: auto;
-            height: 400px; 
-        }
-        .windowspacing {
-            display: flex;
-            justify-content: space-around;
-            padding-top: 40px;
-    }
-        .windowone {
-            width: 100px;
-            height: 100px; 
-            background-color: rgb(255, 0, 255);
-            border: 5px solid rgb(50, 30, 20);
-            
-        }
-        .windowtwo {
-            width: 100px;
-            height: 100px; 
-            background-color: rgb(255, 0, 255);
-            border: 5px solid rgb(50, 30, 20);
-            
-        }
-        .door {
-            width: 100px;
-            height: 200px; 
-            background-color: rgb(0, 0, 0);
-            margin-left: auto; 
-            margin-right: auto;
-        }
-        
-        #forgrass {
-            display: flex;
-            justify-content: space-around;
-        }
-        .grass {
-            width: 0px;
-            height: 0px; 
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
-            border-bottom: 40px solid rgb(0, 200, 0);
-        }
-        .ground {
-            background-color: rgb(101, 67, 33);
-            max-width: 5500px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            height: 300px; 
-        }
-       
-      </style>
 </head>
-<body>
-   <h1>Saisha's Cartoon Page</h1>
-    
-    <div class="text">
-  <strong>Welcome to my Cartoon Page</strong> 
+  <body>
 
-     <div class ="sun">
-    </div>
-        
-    <div class ="roof">
-    </div>
-     
-     </div>
-    <div class ="housebase">
-        <div class="windowspacing">
-        <div class="windowone"></div>
-        <div class="windowtwo"></div>
-            </div>
-        <div class="door"></div>
-         <div id ="forgrass">
-    </div>
-    </div>
+      <h1>Saisha's Cartoon Page</h1>
 
+      <canvas id="myCanvas" width="800" height="500"></canvas>
 
-    
-    <div class ="ground">
-    </div>
-     
-    <script>
-      for (let i = 0; i < 20; i++) {
-         let grass = document.createElement("div");
-         grass.className = "grass";
-         document.getElementById("forgrass").appendChild(grass);
-}
-</script>
+      <a href="pages/saishascartoonpage.html"> If you'd like to return to the main page click this link</a>
+
+      <script src="mycartoon.js"></script>
    
 </body>
 </html>

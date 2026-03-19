@@ -1,4 +1,5 @@
 //my javascript code for my website
+window.onload = function () {
 const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 
@@ -16,4 +17,4 @@ ctx.fillStyle = "rgb(101, 67, 33)";
 ctx.fillRect(0, 270, 800, 200);
 ctx.stroke();
 
-
+};

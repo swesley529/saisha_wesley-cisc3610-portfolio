@@ -19,7 +19,7 @@ window.onload = function () {
 
 //ground
   ctx.fillStyle = "rgb(101, 67, 33)";
-  ctx.fillRect(0, 270, 800, 200);
+  ctx.fillRect(0, canvas.height, 800, canvas.width);
   ctx.stroke();
 
 };

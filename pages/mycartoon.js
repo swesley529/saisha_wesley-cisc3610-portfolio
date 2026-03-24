@@ -14,7 +14,7 @@ const ctx = canvas.getContext("2d");
 
 //sun
   ctx.beginPath();
-  ctx.arc(112, 64, 50, 0, 2 * Math.PI);
+  ctx.arc(212, 64, 50, 0, 2 * Math.PI);
   ctx.fillStyle = "yellow";
   ctx.strokeStyle = "yellow";
   ctx.fill();
@@ -31,9 +31,9 @@ const ctx = canvas.getContext("2d");
 //roof
 ctx.beginPath();
 ctx.strokeStyle = "black";
-ctx.moveTo(400, 200);
-ctx.lineTo(180, 300);
-ctx.lineTo(620, 300);
+ctx.moveTo(750, 200);
+ctx.lineTo(500, 300);
+ctx.lineTo(1000, 300);
 ctx.closePath();
 ctx.fillStyle = "black";
 ctx.fill();
@@ -42,24 +42,40 @@ ctx.stroke();
 //windows
 ctx.beginPath();
 ctx.fillStyle = "white";
-ctx.fillRect(250, 350, 70, 70);
+ctx.fillRect(620, 350, 70, 70);
 
 ctx.beginPath();
 ctx.fillStyle = "white";
-ctx.fillRect(480, 350, 70, 70);
+ctx.fillRect(820, 350, 70, 70);
 
 
 //door
 ctx.beginPath();
 ctx.fillStyle = "pink";
-ctx.fillRect(370, 470, 70, 130);
+ctx.fillRect(720, 470, 70, 130);
 
 //knob
 ctx.beginPath();
 ctx.fillStyle = "black";
-ctx.arc(422, 540, 7, 0, 2 * Math.PI);
+ctx.arc(780, 540, 7, 0, 2 * Math.PI);
 ctx.fill();
 ctx.stroke();
 
+//grass
+for (let i = 0; i < canvas.width; i += 20) {
+  ctx.beginPath();
+  ctx.strokeStyle = "green";
 
-};
+  ctx.moveTo(5 + i, 570);
+  ctx.lineTo(0 + i, 600);
+  ctx.lineTo(15 + i, 600);
+
+  ctx.closePath();
+  ctx.fillStyle = "green";
+  ctx.fill();
+  ctx.stroke();
+}
+
+
+
+

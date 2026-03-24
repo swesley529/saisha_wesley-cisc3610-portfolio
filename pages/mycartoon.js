@@ -23,7 +23,7 @@ window.onload = function () {
 
   //house
   ctx.fillStyle = "rgb(255, 0, 0)";
-  ctx.fillRect(150, canvas.height - 400, 200, 200);
+  ctx.fillRect(350, canvas.height - 400, 500, 500);
 
 
 };

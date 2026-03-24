@@ -4,7 +4,7 @@ window.onload = function () {
 
 canvas.style.border = "3px solid black";
 
-canvas.width = "800";
+canvas.width = "1500";
 canvas.height = "800";
 
 const ctx = canvas.getContext("2d");

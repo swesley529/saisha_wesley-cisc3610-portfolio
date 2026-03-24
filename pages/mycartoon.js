@@ -1,6 +1,14 @@
 //my javascript code for my website
 window.onload = function () {
+  console.log("mycartoon.js loaded");
+
   const canvas = document.getElementById("myCanvas");
+  console.log(canvas);
+
+  if (!canvas) {
+    console.log("Canvas not found");
+    return;
+  }
 
   canvas.style.border = "3px solid black";
 

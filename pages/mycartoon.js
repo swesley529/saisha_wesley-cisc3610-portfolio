@@ -83,6 +83,9 @@ window.onload = function () {
   ctx.fill();
   ctx.stroke();
 }
+  ctx.font = "20px Arial";
+  ctx.fillStyle = "black";
+  ctx.fillText("Hello! Thanks for visiting my page. I hope you like it:)", 100, 200);
   
   
 };

@@ -1,1 +1,1 @@
-js for bootstrap
+console.log("Page is working");

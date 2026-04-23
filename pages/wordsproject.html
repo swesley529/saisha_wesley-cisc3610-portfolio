@@ -2,5 +2,17 @@ Words Project
 <select id="wordSelect" onchange="syncSentence()">
 <option value="">-- Choose a Word --</option>
 <option value="beach" data-sentence="When people go on vacation, they usually go to somewhere that has a beach.">Beach</option>
+<option value="scarf" data-sentence="When it starts to get cold it's smart to wear a scarf so you don't get sick.">Scarf</option>
+<option value="smoothie" data-sentence="If you want something refreshing after your workout, you should get a smoothie.">Smoothie</option>
+<option value="sunglasses" data-sentence="Since it's going to be a sunny day today, I'll bring my sunglasses.">Sunglasses</option>
+<option value="headphones" data-sentence="I like to wear headphones on the subway just in case it gets too noisy.">Headphones</option>
 </select>
+
+<p id="wordDisplay">No word has been selected</p>
+<button onclick=speakWord()>Audio for Word</button>
+
+<p id="sentenceDisplay">No sentence has been selected</p>
+<button onclick=speakSentence()>Audio for Sentence</button>
+
+
 <input type="text" id="sentenceDisplay" readonly>

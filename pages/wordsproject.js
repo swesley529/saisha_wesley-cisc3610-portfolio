@@ -24,6 +24,6 @@ if (menu.selectedIndex > 0) {
   speakWord();
 } else {
   wordDisplay.textContent = "You didn't select a word. Please select a word.";
-  sentenceDisplay.textContent = "You didn't select a sentence. Please select a sentence."
+  sentenceDisplay.textContent = "You didn't select a word so there is no sentence provided."
   }
 }

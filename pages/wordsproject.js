@@ -5,11 +5,11 @@ function speak(textToSay) {
   window.speechSynthesis.speak(message);
 }
 function speakWord() {
-  const words = document.getElementById("wordDisplay");
+  const words = document.getElementById("wordDisplay").textContent;
   speak(words);
 }
 function speakSentence() {
-  const words = document.getElementById("sentenceDisplay");
+  const words = document.getElementById("sentenceDisplay").textContent;
   speak(words);
 }
 function syncSentence() {

@@ -1,0 +1,9 @@
+.square ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.square li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}

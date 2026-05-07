@@ -1,1 +1,34 @@
-
+{
+  "wellness": [
+    {
+      "title": "Meditation",
+      "description": "Meditation is a practice where you focus your mind and eliminate distractions to achieve a calm and clear state. Even just 5 minutes a day can reduce stress, improve focus, and boost your overall mood.",
+      "image": "images/meditation.jpg",
+      "audio": "audio/meditation.mp3"
+    },
+    {
+      "title": "Journaling",
+      "description": "Journaling is the practice of writing down your thoughts and feelings. It helps you process emotions, track your personal growth, and gain clarity on things that are bothering you.",
+      "image": "images/journaling.jpg",
+      "audio": "audio/journaling.mp3"
+    },
+    {
+      "title": "Journaling",
+      "description": "Journaling is the practice of writing down your thoughts and feelings. It helps you process emotions, track your personal growth, and gain clarity on things that are bothering you.",
+      "image": "images/journaling.jpg",
+      "audio": "audio/journaling.mp3"
+    },
+    {
+      "title": "Prioritizing Third Spaces",
+      "description": "Although alone time is essential to our well being, staying in our homes too much can lead to isolation. Third spaces like cafes, libraries, and parks can allow us to ",
+      "image": "images/journaling.jpg",
+      "audio": "audio/journaling.mp3"
+    },
+    {
+      "title": "Hobbies",
+      "description": "Journaling is the practice of writing down your thoughts and feelings. It helps you process emotions, track your personal growth, and gain clarity on things that are bothering you.",
+      "image": "images/journaling.jpg",
+      "audio": "audio/journaling.mp3"
+    }
+  ]
+}

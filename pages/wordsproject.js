@@ -27,16 +27,16 @@ function syncSentence() {
     const word = selectedOption.value;
 
     wordDisplay.textContent = word;
-    sentenceDisplay.textContent = selectedOption.dataset.sentence;
+    sentenceDisplay.value = selectedOption.dataset.sentence;
 
-    img.src = "word" + word + ".png"; // e.g. wordbeach.png, wordscarf.png
+    img.src = "word" + word + ".png"; 
     img.alt = word;
     imgDiv.style.display = "block";
 
     speakWord();
   } else {
     wordDisplay.textContent = "You didn't select a word. Please select a word.";
-    sentenceDisplay.textContent = "You didn't select a word so there is no sentence provided.";
+    sentenceDisplay.value = "You didn't select a word so there is no sentence provided.";
     imgDiv.style.display = "none";
   }
 }

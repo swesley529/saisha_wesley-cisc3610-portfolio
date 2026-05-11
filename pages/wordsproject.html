@@ -20,13 +20,13 @@
   <option value="sunglasses" data-sentence="Since it's going to be a sunny day today, I'll bring my sunglasses.">Sunglasses</option>
   <option value="headphones" data-sentence="I like to wear headphones on the subway just in case it gets too noisy.">Headphones</option>
 </select>
-
+<button onclick="speakWord()">Audio for Word</button>
+    
 <div id="wordImages" style="display:none; margin-top:10px;">
   <img id="wordImage" src="" alt="" style="width:300px; margin:5px;">
 </div>
     
 <p id="wordDisplay">No word has been selected</p>
-<button onclick="speakWord()">Audio for Word</button>
 
 <textarea id="sentenceDisplay" readonly rows="3" cols="50">No sentence has been selected</textarea>
 <button onclick="speakSentence()">Audio for Sentence</button>

@@ -20,6 +20,7 @@ function syncSentence() {
   const wordDisplay = document.getElementById("wordDisplay");
   const sentenceDisplay = document.getElementById("sentenceDisplay");
   const imgDiv = document.getElementById("wordImages");
+  const img = document.getElementById("wordImage");
 
   if (menu.selectedIndex > 0) {
     const selectedOption = menu.options[menu.selectedIndex];
@@ -28,11 +29,8 @@ function syncSentence() {
     wordDisplay.textContent = word;
     sentenceDisplay.textContent = selectedOption.dataset.sentence;
 
-    for (let i = 1; i <= 5; i++) {
-      const img = document.getElementById("wordImage" + i);
-      img.src = word + i + ".png"; 
-      img.alt = word + " " + i;
-    }
+    img.src = "word" + word + ".png"; // e.g. wordbeach.png, wordscarf.png
+    img.alt = word;
     imgDiv.style.display = "block";
 
     speakWord();

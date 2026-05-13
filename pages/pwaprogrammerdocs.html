@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WellnessGuide - Programmer Documentation</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        background-color: rgb(222, 210, 206);
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        background-color: rgb(35, 111, 33);
+        padding: 2rem;
+        text-align: center;
+      }
+
+      header h1 {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 800;
+      }
+
+      header p {
+        color: rgb(170, 189, 160);
+        font-size: 1rem;
+        margin-top: 0.5rem;
+      }
+
+      .brown-bar {
+        background-color: rgb(72, 40, 18);
+        height: 30px;
+      }
+
+      .container {
+        max-width: 750px;
+        margin: 2rem auto;
+        padding: 0 1.5rem;
+      }
+
+      .section {
+        background-color: white;
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+
+      .section h2 {
+        color: rgb(35, 111, 33);
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .section p {
+        color: rgb(80, 80, 80);
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 0.8rem;
+      }
+
+      .section ol, .section ul {
+        color: rgb(80, 80, 80);
+        font-size: 1rem;
+        line-height: 2;
+        padding-left: 1.5rem;
+      }
+
+      code {
+        display: block;
+        background-color: rgb(240, 240, 240);
+        border-left: 4px solid rgb(35, 111, 33);
+        padding: 1rem;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        line-height: 1.8;
+        margin: 1rem 0;
+        white-space: pre;
+        overflow-x: auto;
+      }
+
+      .back-link {
+        display: inline-block;
+        margin: 1rem 0;
+        color: rgb(35, 111, 33);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .back-link:hover {
+        color: rgb(72, 40, 18);
+      }
+
+      footer {
+        background-color: rgb(35, 111, 33);
+        text-align: center;
+        padding: 1.5rem;
+        color: rgb(170, 189, 160);
+        font-size: 0.9rem;
+        margin-top: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>🌿 WellnessGuide</h1>
+      <p>Programmer Documentation</p>
+    </header>
+
+    <div class="brown-bar"></div>
+
+    <div class="container">
+
+      <a class="back-link" href="pwapromopage.html">← Back to Promo Page</a>
+
+      <div class="section">
+        <h2>Project Structure</h2>
+        <p>All files are located in the <strong>pages</strong> folder of the repository:</p>
+        <ul>
+          <li><strong>pwaproject.html</strong> — main app page</li>
+          <li><strong>pwaapp.js</strong> — JavaScript logic</li>
+          <li><strong>pwastyle.css</strong> — all styling</li>
+          <li><strong>pwadata.json</strong> — topic data</li>
+          <li><strong>pwamanifest.json</strong> — PWA manifest</li>
+          <li><strong>pwaserviceworker.js</strong> — offline caching</li>
+          <li><strong>pwapromopage.html</strong> — promotional page</li>
+          <li><strong>pwadocs.html</strong> — user documentation</li>
+          <li><strong>pwaprogrammerdocs.html</strong> — programmer documentation</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>How the JSON Works</h2>
+        <p>All topic content is stored in <strong>pwadata.json</strong>. The app reads this file and automatically builds the nav links and cards. Each topic has 4 fields:</p>
+        <ul>
+          <li><strong>title</strong> — the topic name shown on the card and nav</li>
+          <li><strong>description</strong> — the text shown on the card</li>
+          <li><strong>image</strong> — the image filename</li>
+          <li><strong>audio</strong> — the audio filename</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>How to Add a New Topic</h2>
+        <p>To add a new topic, open <strong>pwadata.json</strong> and add a new object inside the wellness array. Follow this format:</p>
+        <code>{
+  "title": "Sleep",
+  "description": "Getting enough sleep is essential for your mental and physical health. Aim for 7-9 hours per night.",
+  "image": "sleep.png",
+  "audio": "sleep.mp3"
+}</code>
+        <p>Make sure to add a comma after the previous topic's closing bracket before adding your new one. For example:</p>
+        <code>{
+  "wellness": [
+    {
+      "title": "Meditation",
+      ...
+    },
+    {
+      "title": "Sleep",
+      "description": "Your description here.",
+      "image": "sleep.png",
+      "audio": "sleep.mp3"
+    }
+  ]
+}</code>
+      </div>
+
+      <div class="section">
+        <h2>Adding the Image and Audio Files</h2>
+        <ol>
+          <li>Add your image file (png or jpg) to the same folder as the HTML file</li>
+          <li>Add your audio file (mp3) to the same folder</li>
+          <li>Make sure the filenames in the JSON exactly match the actual filenames</li>
+          <li>Add both filenames to the <strong>FILES_TO_CACHE</strong> array in <strong>pwaserviceworker.js</strong> so they work offline</li>
+        </ol>
+      </div>
+
+      <div class="section">
+        <h2>Updating the Service Worker Cache</h2>
+        <p>Whenever you add new files, open <strong>pwaserviceworker.js</strong> and add them to the FILES_TO_CACHE array:</p>
+        <code>const FILES_TO_CACHE = [
+  'pwaproject.html',
+  'pwadata.json',
+  ...
+  'sleep.png',
+  'sleep.mp3'
+];</code>
+        <p>Also update the cache name to force the browser to reload the new version:</p>
+        <code>const CACHE_NAME = 'wellnessguide-v2';</code>
+      </div>
+
+    </div>
+
+    <footer>
+      <p>🌿 WellnessGuide &copy; 2026 | Created by Saisha Wesley</p>
+    </footer>
+
+  </body>
+</html>

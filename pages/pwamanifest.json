@@ -4,7 +4,7 @@
   "description": "Your daily self-care companion",
   "start_url": "pwaproject.html",
   "display": "standalone",
-  "background_color": "#DEDAD2CE",
+  "background_color": "#DED2CE",
   "theme_color": "#236F21",
   "icons": [
     {

@@ -13,22 +13,22 @@
       "audio": "audio/journaling.mp3"
     },
     {
-      "title": "Journaling",
-      "description": "Journaling is the practice of writing down your thoughts and feelings. It helps you process emotions, track your personal growth, and gain clarity on things that are bothering you.",
-      "image": "images/journaling.jpg",
-      "audio": "audio/journaling.mp3"
+      "title": "Exercise",
+      "description": "Exercising helps release stress while allowing you to reconnect with your mind and body. Even just taking 30 minutes everyday can make a huge difference in you mental, emotion, and physical health",
+      "image": "images/exerise.jpg",
+      "audio": "audio/exercise.mp3"
     },
     {
       "title": "Prioritizing Third Spaces",
       "description": "Although alone time is essential to our well being, staying in our homes too much can lead to isolation. Third spaces like cafes, libraries, and parks can allow us to ",
-      "image": "images/journaling.jpg",
-      "audio": "audio/journaling.mp3"
+      "image": "images/thirdspaces.jpg",
+      "audio": "audio/thirdspaces.mp3"
     },
     {
       "title": "Hobbies",
-      "description": "Journaling is the practice of writing down your thoughts and feelings. It helps you process emotions, track your personal growth, and gain clarity on things that are bothering you.",
-      "image": "images/journaling.jpg",
-      "audio": "audio/journaling.mp3"
+      "description": "When finding new hobbies, you naturally create new communities with people that share a similar interest. This can help you find new friends or find new safe spaces.",
+      "image": "images/hobbies.jpg",
+      "audio": "audio/hobbies.mp3"
     }
   ]
 }

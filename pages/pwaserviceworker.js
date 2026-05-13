@@ -13,11 +13,11 @@ const FILES_TO_CACHE = [
   'exercise.png',
   'thirdspaces.png',
   'hobbies.png',
-  'audio/meditation.mp3',
-  'audio/journaling.mp3',
-  'audio/exercise.mp3',
-  'audio/thirdspaces.mp3',
-  'audio/hobbies.mp3'
+  'meditation.mp3',
+  'journaling.mp3',
+  'exercise.mp3',
+  'thirdspaces.mp3',
+  'hobbies.mp3'
 ];
 
 // install
